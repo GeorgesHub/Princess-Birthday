@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A magical birthday tribute for Princess Adjei 💖" />
+  <title>Happy Birthday Princess Adjei 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'LucySaidOk';
+      src: url('LucySaidOk.woff2') format('woff2'),
+           url('LucySaidOk.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    :root {
+      --accent: #ff7ab6;
+      --accent2: #ffd36b;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+      background: #0b0f1f;
+      color: white;
+      overflow: hidden;
+    }
+
+    .slideshow {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .slideshow-track {
+      display: flex;
+      width: calc(100vw * 21);
+      animation: scrollLeft 90s linear infinite;
+    }
+
+    .slideshow img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: contain;
+      background-color: #000;
+    }
+
+    @keyframes scrollLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-2000vw); }
+    }
+
+    .stage {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 700px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+      animation: fadeIn 2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .title {
+      font-family: 'LucySaidOk', cursive;
+      font-size: 48px;
+      color: var(--accent);
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: var(--accent2);
+      margin-bottom: 20px;
+    }
+
+    .message {
+      font-size: 18px;
+      line-height: 1.6;
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 20px;
+      color: #fff;
+      font-family: 'Dancing Script', cursive;
+      white-space: pre-wrap;
+    }
+
+    canvas#confetti {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    audio {
+      display: none;
+    }
+
+    .signature {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      color: #cccccc;
+      z-index: 4;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slideshow">
+    <div class="slideshow-track">
+      <img src="https://drive.google.com/uc?export=view&id=1Gezoh7WQyyTLrZ99ww2-fCRXVvp9FkX2" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=1XqsKUPYaVUIO5T8CwniH0bzz3ClxT3mR" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=1cJ9QSo8Svisvwp8N2V0CAuWmdp_bDgzh" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=1x6BOyuKwxs3l80OzPvqJk5hwYFItlfj-" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=1ywZ6QFAjkheZMWrWX5Tn5j_4vRAU3ykk" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=19hE6WfLv_cTA56HI0h0jtuf0dhMjfPL9" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=19hhFzCeQvYG2WLGETjf9MOt14KerVfWT" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=1CTWyY33Db_M7TZsFiBRCTyRkAdXPnvLH" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=1E1c9wvHUb2SeDi7XF8p95RUafvvMT9BM" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=1JaHSw-ykf9efAuCvBzBMbIwDEHWXcAKF" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=1KZShmx3FcfjmXpXEGujjA_UHMJCYTv_d" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=1TfsrrXlEGVROqHJccAx-ReOX5dMXBabn" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=1_XAO9YGU5Mh0Z2UsJBBTMc4crYI_Pgzp" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=1h9NfCuGuldlSnNICc4W2qID3X4v3P554" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=1mCbVXKKsIb3OZ3onXgecE8ytEKLVnOYD" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=1mbdguxwLAGF-X-BNOd6TGdYcLKBMHJKY" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=1o-3zaFfkuD0IN41GuacRPn9iygJtcys3" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=1oCQr4D8kEvqN_BOlpZOzvvdkTHQpINIJ" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=1pZAvRn6aocR00EibBiSsnSo5XofHJWJ5" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=1pyGHZert1lAD11JaFE26duyTSC7eWun6" alt="Princess Adjei">
+      <img src="https://drive.google.com/uc?export=view&id=1uhH7JdzigRKGkCWFCongV2vBOF8X0qhs" alt="Princess Adjei">
+    </div>
+  </div>
+
+  <canvas id="confetti"></canvas>
+
+  <div class="stage">
+    <div class="card">
+      <h1 class="title">Happy Birthday, Princess Adjei 💖 Elevated Star🌟</h1>
+      <p class="subtitle">Wishing you endless love and laughter.</p>
+      <div
